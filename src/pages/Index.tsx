@@ -135,7 +135,7 @@ const ResultsScreen = () => (
     </div>
 
     {/* Alert Box */}
-    <div className="w-full rounded-2xl border p-4 mb-6 relative" style={{ borderColor: "rgba(239,68,68,0.5)", background: "#1A1A2E" }}>
+    <div className="w-full rounded-2xl border p-4 mb-6 relative animate-border-flicker-red" style={{ borderColor: "rgba(239,68,68,0.5)", background: "#1A1A2E" }}>
       <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded"
         style={{ background: "rgba(239,68,68,0.2)", color: "#ef4444" }}>IMPORTANT</span>
       <div className="flex items-center gap-2 mb-2">

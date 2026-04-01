@@ -105,7 +105,7 @@ const ResultsScreen = () => (
       href={CTA_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full py-4 rounded-[14px] text-center font-bold text-lg flex items-center justify-center gap-2 mb-8"
+      className="w-full py-4 rounded-[14px] text-center font-bold text-lg flex items-center justify-center gap-2 mb-8 animate-cta-glow"
       style={{ background: "#00E676", color: "#000" }}
     >
       <img src={appleIcon} alt="Apple" className="w-5 h-5 invert" /> DOWNLOAD NOW

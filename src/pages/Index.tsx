@@ -93,8 +93,8 @@ const ResultsScreen = () => (
     <AppLogo />
 
     <div className="flex items-center gap-3 mb-4">
-      <CheckCircle size={40} style={{ color: "#00E676" }} />
-      <h1 className="text-3xl font-bold" style={{ color: "#fff" }}>You're In!</h1>
+      <CheckCircle size={40} className="animate-glow-flicker" style={{ color: "#00E676" }} />
+      <h1 className="text-3xl font-bold animate-glow-flicker-text" style={{ color: "#fff" }}>You're In!</h1>
     </div>
 
     <p className="text-center text-sm mb-6" style={{ color: "#aaa" }}>

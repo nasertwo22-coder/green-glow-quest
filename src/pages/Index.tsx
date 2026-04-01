@@ -3,7 +3,7 @@ import { CheckCircle, Lock } from "lucide-react";
 import logo from "@/assets/logo.png";
 import appleIcon from "@/assets/apple-icon.png";
 
-const CTA_URL = "https://linkthem.net/aff_c?offer_id=3932&aff_id=16339";
+const CTA_URL = "https://giftclick.org/aff_c?offer_id=3923&aff_id=16339";
 
 const questions = [
   {

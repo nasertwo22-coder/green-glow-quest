@@ -112,7 +112,7 @@ const ResultsScreen = () => (
     </a>
 
     {/* Earning Journey Card */}
-    <div className="w-full rounded-2xl border p-5 mb-6" style={{ background: "#1A1A2E", borderColor: "rgba(255,255,255,0.1)" }}>
+    <div className="w-full rounded-2xl border p-5 mb-6 animate-border-flicker" style={{ background: "#1A1A2E", borderColor: "rgba(0,230,118,0.15)" }}>
       <p className="text-xs text-center tracking-widest mb-5" style={{ color: "#888" }}>YOUR EARNING JOURNEY</p>
       <div className="flex flex-col gap-5">
         {[

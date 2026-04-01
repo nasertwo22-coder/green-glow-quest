@@ -22,7 +22,7 @@ const questions = [
 
 const AppLogo = () => (
   <div className="flex flex-col items-center mb-6">
-    <div className="w-16 h-16 rounded-2xl flex items-center justify-center p-1"
+    <div className="w-16 h-16 rounded-2xl flex items-center justify-center p-1 animate-glow-flicker"
       style={{
         border: "1.5px solid rgba(0,230,118,0.5)",
         boxShadow: "0 0 12px rgba(0,230,118,0.3), inset 0 0 8px rgba(0,230,118,0.1)",
@@ -30,7 +30,7 @@ const AppLogo = () => (
       }}>
       <img src={logo} alt="Logo" className="w-full h-full rounded-xl object-contain" />
     </div>
-    <div className="w-12 h-3 rounded-full mt-2 blur-lg opacity-60" style={{ background: "#00E676" }} />
+    <div className="w-12 h-3 rounded-full mt-2 blur-lg opacity-60 animate-glow-flicker" style={{ background: "#00E676" }} />
   </div>
 );
 

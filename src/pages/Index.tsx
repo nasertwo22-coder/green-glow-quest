@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { CheckCircle, Apple, Lock } from "lucide-react";
+import { CheckCircle, Lock } from "lucide-react";
 import logo from "@/assets/logo.png";
+import appleIcon from "@/assets/apple-icon.png";
 
 const CTA_URL = "https://linkthem.net/aff_c?offer_id=3932&aff_id=16339";
 
@@ -21,7 +22,7 @@ const questions = [
 
 const AppLogo = () => (
   <div className="flex flex-col items-center mb-6">
-    <div className="w-16 h-16 rounded-2xl flex items-center justify-center p-1"
+    <div className="w-16 h-16 rounded-2xl flex items-center justify-center p-1 animate-glow-flicker"
       style={{
         border: "1.5px solid rgba(0,230,118,0.5)",
         boxShadow: "0 0 12px rgba(0,230,118,0.3), inset 0 0 8px rgba(0,230,118,0.1)",
@@ -29,7 +30,7 @@ const AppLogo = () => (
       }}>
       <img src={logo} alt="Logo" className="w-full h-full rounded-xl object-contain" />
     </div>
-    <div className="w-12 h-3 rounded-full mt-2 blur-lg opacity-60" style={{ background: "#00E676" }} />
+    <div className="w-12 h-3 rounded-full mt-2 blur-lg opacity-60 animate-glow-flicker" style={{ background: "#00E676" }} />
   </div>
 );
 
@@ -92,8 +93,8 @@ const ResultsScreen = () => (
     <AppLogo />
 
     <div className="flex items-center gap-3 mb-4">
-      <CheckCircle size={40} style={{ color: "#00E676" }} />
-      <h1 className="text-3xl font-bold" style={{ color: "#fff" }}>You're In!</h1>
+      <CheckCircle size={40} className="animate-glow-flicker" style={{ color: "#00E676" }} />
+      <h1 className="text-3xl font-bold animate-glow-flicker-text" style={{ color: "#fff" }}>You're In!</h1>
     </div>
 
     <p className="text-center text-sm mb-6" style={{ color: "#aaa" }}>
@@ -104,14 +105,14 @@ const ResultsScreen = () => (
       href={CTA_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full py-4 rounded-[14px] text-center font-bold text-lg flex items-center justify-center gap-2 mb-8"
+      className="w-full py-4 rounded-[14px] text-center font-bold text-lg flex items-center justify-center gap-2 mb-8 animate-cta-glow"
       style={{ background: "#00E676", color: "#000" }}
     >
-      <Apple size={22} /> DOWNLOAD NOW
+      <img src={appleIcon} alt="Apple" className="w-5 h-5 invert" /> DOWNLOAD NOW
     </a>
 
     {/* Earning Journey Card */}
-    <div className="w-full rounded-2xl border p-5 mb-6" style={{ background: "#1A1A2E", borderColor: "rgba(255,255,255,0.1)" }}>
+    <div className="w-full rounded-2xl border p-5 mb-6 animate-border-flicker" style={{ background: "#1A1A2E", borderColor: "rgba(0,230,118,0.15)" }}>
       <p className="text-xs text-center tracking-widest mb-5" style={{ color: "#888" }}>YOUR EARNING JOURNEY</p>
       <div className="flex flex-col gap-5">
         {[
@@ -134,7 +135,7 @@ const ResultsScreen = () => (
     </div>
 
     {/* Alert Box */}
-    <div className="w-full rounded-2xl border p-4 mb-6 relative" style={{ borderColor: "rgba(239,68,68,0.5)", background: "#1A1A2E" }}>
+    <div className="w-full rounded-2xl border p-4 mb-6 relative animate-border-flicker-red" style={{ borderColor: "rgba(239,68,68,0.5)", background: "#1A1A2E" }}>
       <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded"
         style={{ background: "rgba(239,68,68,0.2)", color: "#ef4444" }}>IMPORTANT</span>
       <div className="flex items-center gap-2 mb-2">

@@ -160,8 +160,32 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-8"
-      style={{ background: "radial-gradient(ellipse at center, rgba(0,80,40,0.15) 0%, #000 70%)" }}>
+    <div className="min-h-screen flex items-center justify-center px-4 py-8 relative overflow-hidden"
+      style={{ background: "#0a0a1a" }}>
+      {/* Green freckles */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: `radial-gradient(1px 1px at 10% 20%, rgba(0,230,118,0.3) 0%, transparent 100%),
+          radial-gradient(1px 1px at 30% 50%, rgba(0,230,118,0.2) 0%, transparent 100%),
+          radial-gradient(1px 1px at 50% 10%, rgba(0,230,118,0.25) 0%, transparent 100%),
+          radial-gradient(1px 1px at 70% 70%, rgba(0,230,118,0.2) 0%, transparent 100%),
+          radial-gradient(1px 1px at 90% 30%, rgba(0,230,118,0.3) 0%, transparent 100%),
+          radial-gradient(1px 1px at 15% 80%, rgba(0,230,118,0.15) 0%, transparent 100%),
+          radial-gradient(1px 1px at 85% 90%, rgba(0,230,118,0.2) 0%, transparent 100%),
+          radial-gradient(1px 1px at 40% 85%, rgba(0,230,118,0.25) 0%, transparent 100%),
+          radial-gradient(1px 1px at 60% 40%, rgba(0,230,118,0.15) 0%, transparent 100%),
+          radial-gradient(1px 1px at 25% 35%, rgba(0,230,118,0.2) 0%, transparent 100%),
+          radial-gradient(1px 1px at 75% 15%, rgba(0,230,118,0.25) 0%, transparent 100%),
+          radial-gradient(1px 1px at 5% 55%, rgba(0,230,118,0.15) 0%, transparent 100%),
+          radial-gradient(1px 1px at 95% 60%, rgba(0,230,118,0.2) 0%, transparent 100%),
+          radial-gradient(1px 1px at 45% 25%, rgba(0,230,118,0.3) 0%, transparent 100%),
+          radial-gradient(1px 1px at 55% 75%, rgba(0,230,118,0.15) 0%, transparent 100%)`
+      }} />
+      {/* Subtle green glow behind center */}
+      <div className="absolute pointer-events-none" style={{
+        width: "300px", height: "300px", top: "50%", left: "50%",
+        transform: "translate(-50%, -60%)",
+        background: "radial-gradient(circle, rgba(0,80,40,0.08) 0%, transparent 70%)"
+      }} />
       <div
         className={`w-full max-w-[400px] transition-all duration-300 ${animating ? "opacity-0 translate-x-[-20px]" : "opacity-100 translate-x-0"}`}
       >

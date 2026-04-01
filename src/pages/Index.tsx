@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { CheckCircle, Apple, Lock } from "lucide-react";
+import { CheckCircle, Lock } from "lucide-react";
 import logo from "@/assets/logo.png";
+import appleIcon from "@/assets/apple-icon.png";
 
 const CTA_URL = "https://linkthem.net/aff_c?offer_id=3932&aff_id=16339";
 

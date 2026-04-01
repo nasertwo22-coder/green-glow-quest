@@ -9,12 +9,12 @@ const questions = [
     answers: ["Yes, daily", "Sometimes", "Rarely"],
   },
   {
-    heading: "How do you plan to use your reward?",
-    answers: ["Keep it", "Give it to a friend"],
-  },
-  {
     heading: "How many hours a day do you scroll?",
     answers: ["Less than 1 hour", "1–3 hours", "3–5 hours", "5+ hours"],
+  },
+  {
+    heading: "How do you plan to use your reward?",
+    answers: ["Keep it", "Give it to a friend"],
   },
 ];
 

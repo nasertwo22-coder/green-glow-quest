@@ -150,6 +150,30 @@ const ResultsScreen = () => (
     <p className="text-xs text-center" style={{ color: "#555" }}>
       Trusted by over 500,000 users earning money daily
     </p>
+
+    {/* Trustpilot */}
+    <div className="w-full flex flex-col items-center mt-6 mb-4">
+      <div className="flex items-center gap-2 mb-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12 1.5l2.76 8.5H23.4l-6.96 5.06 2.66 8.19L12 18.19l-7.1 5.06 2.66-8.19L.6 10H9.24L12 1.5z" fill="#00B67A"/>
+        </svg>
+        <span className="text-sm font-semibold" style={{ color: "#fff" }}>Trustpilot</span>
+      </div>
+      <div className="flex gap-1 mb-1">
+        {[...Array(5)].map((_, i) => (
+          <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 1.5l2.76 8.5H23.4l-6.96 5.06 2.66 8.19L12 18.19l-7.1 5.06 2.66-8.19L.6 10H9.24L12 1.5z" fill="#00B67A"/>
+          </svg>
+        ))}
+      </div>
+      <p className="text-[10px]" style={{ color: "#888" }}>Rated 4.6/5 from 30,000+ reviews</p>
+    </div>
+
+    {/* Privacy & Support */}
+    <div className="flex items-center gap-4 mt-2">
+      <a href="#" className="text-[10px] underline" style={{ color: "#555" }}>Privacy Policy</a>
+      <a href="#" className="text-[10px] underline" style={{ color: "#555" }}>Support</a>
+    </div>
   </div>
 );
 
